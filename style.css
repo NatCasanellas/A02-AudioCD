@@ -1,1 +1,13 @@
 @import "reset.css";
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #f857a8;
+}
+
+h3 {
+    color: white;
+}

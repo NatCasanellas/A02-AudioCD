@@ -4,68 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Nunito+Sans&family=Poppins&family=Red+Hat+Mono:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> -->
-    <link rel="stylesheet" href="style.css">
-    <title>Frank - Amy Winehouse</title>
+    <title>Amy Winehouse</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <h1><span>F R A N K</span></h1>
-    <h3><span>A M Y  W I N E H O U S E</span></h3>
-
-    <img class="amy" src="img/Amy Winehouse - Frank.jpg" alt="">
-
+<body class="hola">
+    <!---
+    <div>
+        <p>Album F R A N K</p>
+    </div>
+    -->
     <div class="main">
-        <p id="logo"><i class="fa fa-music" aria-hidden="true"></i>music</p>
-            
 
-        <!---left part-->
         <div class="left">
-
-            <!---song image-->
-            <img id="track_image">
+            <img id="track_image" src="img/Amy.jpg" alt=""> <!--imatge-->
             <div class="volume">
-
-            <p id="volume_show">90</p>
-            <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon" onclick="mute_sound()"></i>
-            <input type="range" min="0" max="100" value="90" onchange="volume_change()">
+                <p id="volume_show">90</p>
+                <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon">
+                    <!-- ::before -->
+                </i>
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            </div>
         </div>
+
+        <div class="right">
+            <div class="show_song_no">
+                <p id="present">1</p>
+                <p>/</p>
+                <p id="total">5</p>
+            </div>
+            <p id="title">Valerie</p>
+            <p id="artist">Amy Winehouse</p>
+
+            <div class="middle">
+                <button onclick="previous_song()" id="pre">
+                    <i class="fa fa-step-backward" aria-hidden="true"><!--::before--></i>
+                </button>
+                <button onclick="justplay()" id="play">
+                    <i class="fa fa-play" aria-hidden="true"><!--::before--></i>
+                </button>
+                <button onclick="next_song()" id="next">
+                    <i class="fa fa-step-forward" aria-hidden="true"><!--::before--></i>
+                </button>
+            </div>
+
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+            </div>
+
+            <button id="auto" onclick="autoplay_switch()">
+                Auto play
+                <i class="fa fa-circle-o-notch" aria-hidden="true"><!--::before--></i>
+            </button>
+        </div>
+
     </div>
 
-     <!--right part-->
-    <div class="right">
-        <div class="show_song_no">
-            <p id="present">1</p>
-            <p></p>
-            <p id="total">5</p>
-        </div>
-
-        <!--song title-->
-        <p id="title">title.mp3</p>
-        <p id="artist">Amy Winehouse</p>
-
-        <!--middle part-->
-        <div class="middle">
-            <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button> 
-            <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
-            <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
-        </div>
-
-        <!--song duration part-->
-        <div class="duration">
-            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
-        </div>
-        <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
-
-    </div>
-    
-    
-
-    <footer>
-        <a href="https://es.wikipedia.org/wiki/Frank_(%C3%A1lbum)">+info</a>
-    </footer>
-    
-    <!--Add javascript file-->
     <script src="script.js"></script>
 
 </body>

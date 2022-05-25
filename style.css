@@ -18,7 +18,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #005db4, #00d4d4);
+    background-color: black;
+    /*background: linear-gradient(to right, #005db4, #00d4d4);*/
     box-shadow: 1px 0px 20px 12px rgb(29, 29, 29);
     z-index: 2;
 }
@@ -35,10 +36,10 @@ body {
 }
 
 .left img {
-    height: 400px;
-    aspect-ratio: inherit;
+    height: 350px;
+    /*aspect-ratio: inherit;*/
     border-radius: 15px;
-    box-shadow: 1px 0px 20px rgb(29, 29, 29);
+    /*box-shadow: 1px 0px 20px rgb(29, 29, 29);*/
 }
 
 .left .volume {
@@ -50,13 +51,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: blue;
+    color: #faebd7;
 }
 
 .volume #volume_show {
-    padding: 8px 12px;
-    margin: 0 5px 0 0;
-    background: lightseagreen;
+    padding: 2px 9px;
+    margin: 0 9px 0 0;
+    background: #ff0080;
 }
 
 .left .volume p {
@@ -67,9 +68,9 @@ body {
 .left .volume i {
     transition: 0.5s;
     cursor: pointer;
-    padding: 8px 12px;
-    background: lightseagreen;
-    box-shadow: 1px 0px 20px 3px rgb(0 0 15 /43%);
+    padding: 5px 9px;
+    background: #ff0080;
+    /*box-shadow: 1px 0px 20px 3px rgb(0 0 15 /43%);*/
 }
 
 .fa {
@@ -107,28 +108,30 @@ input[type="range"]{
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    color: blueviolet;
+    color: #faebd7;
     border-radius: 5px;
-    background: red;
+    background: #ff0080;
     box-shadow: 1px 0px 20px 3px rgb(0 0 15 /43%);
 }
 
+/*titol de la canço*/
 .right #title {
     position: absolute;
     top: 60px;
-    left: 200px;
+    left: 50%;/*200px/50px*/
     transform: translateX(-50%);
     color: whitesmoke;
     font-size: 40px;
     white-space: nowrap;
 }
 
+/*nom artista*/
 .right #artist {
     position: absolute;
     top: 110px;
@@ -148,8 +151,8 @@ input[type="range"]{
 
 .right .middle button {
     border: none;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -157,7 +160,7 @@ input[type="range"]{
     cursor: pointer;
     outline: none;
     transition: 0.5s;
-    background: greenyellow;
+    background: #faebd7;
     box-shadow: 1px 0px 20px 3px rgb(0 0 15 / 43%);
 }   
 
@@ -172,9 +175,10 @@ input[type="range"]{
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-}    
+}  
+
 #play {
-    background: greenyellow;
+    background: #faebd7;
     box-shadow: 1px 0px 20px 3px rgb(0 0 15 / 43%);
 }
 
@@ -195,6 +199,7 @@ input[type="range"]{
     width: 40%;
 }
 
+/*auto play*/
 .right #auto {
     font-size: 18px;
     cursor: pointer;
@@ -202,7 +207,7 @@ input[type="range"]{
     border: none;
     padding: 10px 14px;
     color: var(--texto);
-    background: #00e08a;
+    background: #faebd7;
     outline: none;
     box-shadow: 1px 0px 20px 3px rgb(0 0 15 / 43%);
     border-radius: 10px;

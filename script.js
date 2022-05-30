@@ -32,25 +32,25 @@ let All_song = [
     {
         name: "You Sent Me Flying",
         path: "songs/2.mp3",//ruta de la canço
-        img: "img/amy.jpg",//ruta de la imatge
+        img: "",//ruta de la imatge
         singer: "Amy Winehouse"
     },
     {
         name: "Fuck Me Pumps",
         path: "songs/3.mp3",//ruta de la canço
-        img: "img/amy.jpg",//ruta de la imatge
+        img: "",//ruta de la imatge
         singer: "Amy Winehouse"
     },
     {
         name: "Help Yourself",
         path: "songs/10.mp3",//ruta de la canço
-        img: "img/amy.jpg",//ruta de la imatge
+        img: "",//ruta de la imatge
         singer: "Amy Winehouse"
     },
     {
         name: "Valerie",
         path: "songs/11.mp3",//ruta de la canço
-        img: "img/amy.jpg",//ruta de la imatge
+        img: "",//ruta de la imatge
         singer: "Amy Winehouse"
     }
 ];
